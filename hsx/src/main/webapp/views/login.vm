@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录页</title>
+</head>
+<body>
+<form method="post" action="/user/login">
+	登录名：<input name="u.uname"  type="text" value=""><br/>
+	密码：<input name="u.pwd" type="text" value=""><br/>
+	<input type="submit" value="登录">&nbsp;&nbsp;
+    <a href="/user/toRegister" target="_blank">注册</a>
+</form>
+</body>
+</html>

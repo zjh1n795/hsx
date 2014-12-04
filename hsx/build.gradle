@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir 'src/main/resources'
+            srcDir 'src/main/java'
+            srcDir 'src/main/test'
+        }
+    }
+}
+
+dependencies {
+    compile "net.paoding:rose:1.2-SNAPSHOT"
+    compile "net.paoding:rose-jade:1.2-SNAPSHOT"
+    compile "sslext:sslext:1.10-4"
+}
